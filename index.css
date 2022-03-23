@@ -4,18 +4,12 @@
     padding: 0;
 }
 
-html,body{
-    margin: 0;
-    padding: 0;
-}
-
 #container{
     width: 100%;
     height:100%;
     color: rgb(92, 91, 91);
     font-family: sans-serif;
     font-size: 18px;
-    font-weight: bolder;
 }
 
 header{
@@ -26,26 +20,26 @@ header{
     align-items: center;
     padding-top: 1.2rem;
     opacity: 0.8;
-    z-index: -1;
     color: white;
     background-image: url("/assets/1e031308-de53-4b3e-8a88-95b967c1a966.jpg");
     background-position: center;
     background-size: cover;
 }
 
-header nav{
+header> nav{
     height:30px;
-    width:600px;  
+    width:60vw;  
+    padding:2px;
 }
 
-header nav ul{
+header > nav > ul{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     list-style: none;
 }
 
-
+/* to navigate among different sections of resume */
 .header-tags{
     text-decoration: none;
     color: white;
@@ -54,6 +48,7 @@ header nav ul{
 .header-tags:hover{
     border-bottom: 1px solid #2857a4;
     color: #2857a4;
+    cursor: pointer;
 }
 
 
@@ -61,8 +56,8 @@ header nav ul{
 /* name heading css */
 
 
-#name-heading{
-    margin-top: 6vh;
+#header_name{
+    margin-top: 18px;
     width:400px;
     display: flex;
     flex-direction: column;
@@ -71,7 +66,7 @@ header nav ul{
     font-weight: 700;
 }
 
-#social-media-links{
+#header_social_media_icons{
     width:200px;
     list-style: none;
     display: flex;
@@ -80,17 +75,17 @@ header nav ul{
     margin-top: 15px;
 }
 
-.link-icons a{
+.social-icons >a{
     text-decoration: none;
     color: white;
 }
-.link-icons  a i {
+.social-icons > a >i {
     padding: 10px;
     font-size: 1rem;
     border-radius: 50%;
 }
 
-.link-icons  a i:hover {
+.social-icons  >a> i:hover {
     box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
 }
 
@@ -199,7 +194,7 @@ main{
 .skill-bar{
     position:absolute;
     bottom: 0;
-    width:390px;
+    /* width:390px; */
     background-color: #2857a4;
     height:3px;
     margin:0px 5px;
